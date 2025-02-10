@@ -31,7 +31,7 @@ LD RES   ; 0x022 RES = AC
 
 ;STEPS = STEPS - 1
 LV STEPS ; 0x024 AC = STEPS
-SB K /001; 0x026 AC = STEPS - 1
+SB /001; 0x026 AC = STEPS - 1
 LB STEPS ; 0x028 STEPS = AC
 
 JP /008  ; 0x02A Volta para o inicio do algoritmo
