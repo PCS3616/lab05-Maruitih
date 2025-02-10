@@ -1,14 +1,14 @@
 ;Fatorial
-K /8100 ; AC = N
-K /1012 ; desvio para endereco de parada
-K /8102 ; AC = resultado
-K /6100 ; AC = resultado * N
-K /9102 ; Load no valor de resultado
-K /8100 ; AC = N
-K /5104 ; N = N - 1
-K /9100 ; Load no valor de N
-K /0000 ; Desvio incondicional
-K /C012 ; Endereco de parada
+LD /100 ; AC = N
+JZ /012 ; desvio para endereco de parada
+LD /102 ; AC = resultado
+ML /100 ; AC = resultado * N
+MM /102 ; Load no valor de resultado
+LD /100 ; AC = N
+SB /104 ; N = N - 1
+MM /100 ; Load no valor de N
+JP /000 ; Desvio incondicional
+HM /012 ; Endereco de parada
 
 @ /0100
 N K /120 ; Valor de N
