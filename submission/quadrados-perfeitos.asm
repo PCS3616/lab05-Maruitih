@@ -8,7 +8,7 @@ LD RES   ; 0x006 RES = 1
 
 ; STEPS != 0
 LV STEPS ; 0x008 AC = STEPS = 63
-JZ       ; 0x00A Sai do algoritmo quando terminar os 63 loops 
+JZ /02E  ; 0x00A Sai do algoritmo quando terminar os 63 loops 
 
 ;ADRS = ADRS + 2
 LV ADRS  ; 0x00C AC = ADRS
@@ -35,7 +35,7 @@ SB K /001; 0x026 AC = STEPS - 1
 LB STEPS ; 0x028 STEPS = AC
 
 JP /008  ; 0x02A Volta para o inicio do algoritmo
-HM /026  ; 0x02E HALT
+HM /02E  ; 0x02E HALT
 
 ;Valores
 @ /060
