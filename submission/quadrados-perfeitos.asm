@@ -39,8 +39,8 @@ HM /02E  ; 0x02E HALT
 
 ;Valores
 @ /060
-RES     /000
-BASE    /001
-ADD     /002
-STEPS   =063
-ADRS    /100
+RES    K /000
+BASE   K /001
+ADD    K /002
+STEPS  K /03F
+ADRS   K /100
